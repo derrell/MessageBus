@@ -16,8 +16,8 @@ package org.lipman.MessageBus;
  */
 class Subscription
 {
-  private ICallback        callback;
   private String           messageType;
+  private ICallback        callback;
   private int              id;
   
   private static int       nextId = 1;
@@ -45,6 +45,9 @@ class Subscription
   
   /**
    * Retrieve the message type of this subscription
+   *
+   * @return
+   *   The message type of this subscription
    */
   String getType()
   {
@@ -53,6 +56,9 @@ class Subscription
   
   /**
    * Retrieve the callback function of this subscription
+   *
+   * @return
+   *   The callback function of this subscription
    */
   ICallback getCallback()
   {
@@ -61,6 +67,9 @@ class Subscription
   
   /**
    * Retrieve the assigned ID of this subscription
+   *
+   * @return
+   *   The ID of this subscription
    */
   int getId()
   {

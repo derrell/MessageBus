@@ -13,6 +13,9 @@ package org.lipman.MessageBus;
 
 import org.lipman.MessageBus.EDataType;
 
+/**
+ * Type of data that can be dispatched on the message bus
+ */
 class Data extends Object
 {
   private EDataType     type;
@@ -36,6 +39,7 @@ class Data extends Object
   
   void set(int i)
   {
+    // Convert to double and use the overload for double
     this.set(i + 0.0);
   }
   

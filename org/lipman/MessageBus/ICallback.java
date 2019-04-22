@@ -11,6 +11,9 @@
 
 package org.lipman.MessageBus;
 
+/**
+ * Functional Interface for callback functions.
+ */
 interface ICallback
 {
   void setData(Data data);

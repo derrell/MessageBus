@@ -11,6 +11,9 @@
 
 package org.lipman.MessageBus;
 
+/**
+ * Enumeration of the possible Message Bus data types
+ */
 enum EDataType
 {
   NUMBER,
