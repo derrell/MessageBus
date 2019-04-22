@@ -1,8 +1,11 @@
-```
+This is a Java message bus event infrastructure. Subscribers can subscribe to
+messages of a certain type, and their callback function will be called when
+messages of that type are dispatched.
+
 # We'll put the .class files in bin
 mkdir -p bin
 javac -d bin org/lipman/MessageBus/*.java
 
 # Run the example code at the bottom of MessageBus.java
 (cd bin && java org/lipman/MessageBus/MessageBus)
-```
+
